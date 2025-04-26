@@ -78,6 +78,8 @@ class GradBaseSolver:
         self.tol = tol
         self.core_solver = core_solver
         self.is_agg = (self.core_solver.core_name == 'AggCore')
+        # Missing attribute
+        self.verbose=verbose
         try:
             self.agg_name = self.core_solver.agg_name
         except:

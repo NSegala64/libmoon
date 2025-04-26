@@ -9,7 +9,12 @@ from libmoon.util.constant import get_problem, FONT_SIZE, get_agg_func
 from libmoon.util.gradient import get_moo_Jacobian_batch
 
 # D:\pycharm_project\libmoon\libmoon\solver\gradient\methods\core\core_solver.py
-from libmoon.solver.gradient.methods.core.core_solver import EPOCore, PMGDACore
+#Fixing import
+from libmoon.solver.gradient.methods.epo_solver import EPOCore
+from libmoon.solver.gradient.methods.pmgda_solver import PMGDACore
+#Old import
+#from libmoon.solver.gradient.methods.core.core_solver import EPOCore,PMGDACore
+
 import os
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
